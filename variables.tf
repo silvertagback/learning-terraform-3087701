@@ -12,12 +12,12 @@ variable "ami_filter" {
   })
   
   default = {
-    name   = "bitnami-tomcat-*-x86_64-hvm-ebs-nami"
+    name  = "bitnami-tomcat-*-x86_64-hvm-ebs-nami"
     owner = "979382823631" # Bitnami
   }
 }
 
-variable "environment {
+variable "environment" {
   description = "Development Environment"
   
   type = object ({
@@ -26,8 +26,8 @@ variable "environment {
   })
 
   default = {
-  name = "dev"
-  cidr = "10.0"
+    name = "dev"
+    cidr = "10.0"
   }
 }
 
